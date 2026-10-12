@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".video">
+
+    <!-- TÍTULO DA TELA -->
+    <TextView
+        android:id="@+id/txtTituloVideos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="32dp"
+        android:text="Vídeos Educativos"
+        android:textColor="#12E047"
+        android:textSize="36sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- SCROLLVIEW PARA ROLAR A LISTA DE VÍDEOS -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="16dp"
+        android:fillViewport="true"
+        app:layout_constraintBottom_toTopOf="@id/barraNavegacao"
+        app:layout_constraintTop_toBottomOf="@id/txtTituloVideos">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- CARD VÍDEO 1 -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardVideo1"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginBottom="20dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                app:cardBackgroundColor="#D9D9D9"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="0dp">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <!-- 1. IMAGEM DE CAPA (FUNDO) -->
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/capa8"
+                        android:contentDescription="Capa do Vídeo 1" />
+
+                    <!-- 2. ÍCONE DE PLAY (POR CIMA DA CAPA) -->
+                    <ImageView
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_gravity="center"
+                        android:src="@android:drawable/ic_media_play"
+                        app:tint="#FFFFFF"
+                        android:contentDescription="Play Vídeo 1" />
+                </FrameLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- CARD VÍDEO 2 -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/phish2"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginBottom="20dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                app:cardBackgroundColor="#D9D9D9"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="0dp">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <!-- 1. IMAGEM DE CAPA (FUNDO) -->
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/capa3"
+                        android:contentDescription="Capa do Vídeo 2" />
+
+                    <!-- 2. ÍCONE DE PLAY (POR CIMA DA CAPA) -->
+                    <ImageView
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_gravity="center"
+                        android:src="@android:drawable/ic_media_play"
+                        app:tint="#FFFFFF"
+                        android:contentDescription="Play Vídeo 2" />
+                </FrameLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- CARD VÍDEO 3 -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardVideo3"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginBottom="20dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                app:cardBackgroundColor="#D9D9D9"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="0dp">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <!-- 1. IMAGEM DE CAPA (FUNDO) -->
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/capa4"
+                        android:contentDescription="Capa do Vídeo 3" />
+
+                    <!-- 2. ÍCONE DE PLAY (POR CIMA DA CAPA) -->
+                    <ImageView
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_gravity="center"
+                        android:src="@android:drawable/ic_media_play"
+                        app:tint="#FFFFFF"
+                        android:contentDescription="Play Vídeo 3" />
+                </FrameLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- CARD VÍDEO 4 -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardVideo4"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginBottom="20dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                app:cardBackgroundColor="#D9D9D9"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="0dp">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <!-- 1. IMAGEM DE CAPA (FUNDO) -->
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/capa5"
+                        android:contentDescription="Capa do Vídeo 4" />
+
+                    <!-- 2. ÍCONE DE PLAY (POR CIMA DA CAPA) -->
+                    <ImageView
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_gravity="center"
+                        android:src="@android:drawable/ic_media_play"
+                        app:tint="#FFFFFF"
+                        android:contentDescription="Play Vídeo 4" />
+                </FrameLayout>
+            </androidx.cardview.widget.CardView>
+            <!-- Se quiser adicionar mais vídeos no futuro, é só copiar e colar mais <androidx.cardview.widget.CardView> aqui dentro -->
+
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- BARRA INFERIOR (HOME) -->
+    <FrameLayout
+        android:id="@+id/barraNavegacao"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#D9D9D9"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageView
+            android:id="@+id/btnHome"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="24dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:src="@drawable/home"
+            app:tint="#000000" />
+    </FrameLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

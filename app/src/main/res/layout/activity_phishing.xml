@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".phishing">
+
+    <!-- TÍTULO DA TELA -->
+    <TextView
+        android:id="@+id/txtTituloVideos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="32dp"
+        android:text="Mais sobre Phishing"
+        android:textColor="#4C00E7"
+        android:textSize="36sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- SCROLLVIEW PARA ROLAR A LISTA DE VÍDEOS -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="16dp"
+        android:fillViewport="true"
+        app:layout_constraintBottom_toTopOf="@id/barraNavegacao"
+        app:layout_constraintTop_toBottomOf="@id/txtTituloVideos">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                app:cardCornerRadius="12dp"
+                app:cardBackgroundColor="#F5F5F5"
+                app:cardElevation="4dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <!-- Engenharia Social -->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="O que é Engenharia Social?"
+                        android:textStyle="bold"
+                        android:textSize="22sp"
+                        android:textColor="#000000"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:text="A Engenharia Social é uma técnica utilizada por criminosos para manipular pessoas e convencê-las a fornecer informações confidenciais, como senhas, dados bancários e códigos de acesso. Em vez de explorar falhas em sistemas, o atacante explora a confiança, a curiosidade ou o medo da vítima."
+                        android:textAlignment="viewStart"
+                        android:textColor="#444444"
+                        android:textSize="16sp"
+                        android:justificationMode="inter_word"/>
+
+                    <!-- RESUMO SOBRE PHISHING -->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="O que é Phishing?"
+                        android:textStyle="bold"
+                        android:textSize="22sp"
+                        android:textColor="#000000"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:text="Phishing é um golpe virtual em que criminosos tentam enganar as pessoas por meio de e-mails, mensagens, sites ou links falsos que imitam empresas confiáveis. O objetivo é roubar informações pessoais, como senhas, dados bancários e documentos."
+                        android:textSize="16sp"
+                        android:textColor="#444444"
+                        android:justificationMode="inter_word"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="14dp"
+                        android:text="Como se proteger?"
+                        android:textStyle="bold"
+                        android:textSize="18sp"
+                        android:textColor="#000000"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="6dp"
+                        android:text="• Verifique o endereço do site antes de acessar.\n\n• Desconfie de mensagens com senso de urgência.\n\n• Nunca informe senhas ou dados pessoais em links desconhecidos.\n\n• Confirme informações diretamente nos canais oficiais da empresa."
+                        android:textSize="16sp"
+                        android:textColor="#444444"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="14dp"
+                        android:text="Antes de clicar, verifique. Alguns segundos de atenção podem evitar grandes prejuízos."
+                        android:textColor="#C50003"
+                        android:textSize="18sp"
+                        android:textStyle="italic" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="14dp"
+                        android:text="Abaixo estão videos para o melhor entendimento."
+                        android:textColor="#0A7A0A"
+                        android:textSize="18sp"
+                        android:textStyle="italic" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <!-- ===================== -->
+            <!-- Phishing -->
+            <!-- ===================== -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Phishing: "
+                android:textColor="#4CAF50"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+            <!-- ===================== -->
+            <!-- VÍDEO 1 -->
+            <!-- ===================== -->
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/phish1"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginBottom="20dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                app:cardCornerRadius="12dp">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/capa7"/>
+
+                    <ImageView
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_gravity="center"
+                        android:src="@android:drawable/ic_media_play"
+                        app:tint="#FFFFFF"/>
+
+                </FrameLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <!-- ===================== -->
+            <!-- VÍDEO 2 -->
+            <!-- ===================== -->
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/phish2"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginBottom="20dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                app:cardCornerRadius="12dp">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/capa2"/>
+
+                    <ImageView
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_gravity="center"
+                        android:src="@android:drawable/ic_media_play"
+                        app:tint="#FFFFFF"/>
+
+                </FrameLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <!-- ===================== -->
+            <!-- Engenharia Social -->
+            <!-- ===================== -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Engenharia Social: "
+                android:textColor="#4CAF50"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+            <!-- ===================== -->
+            <!-- VÍDEO 3 -->
+            <!-- ===================== -->
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/engensocial1"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginBottom="20dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                app:cardCornerRadius="12dp">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/capa9"/>
+
+                    <ImageView
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_gravity="center"
+                        android:src="@android:drawable/ic_media_play"
+                        app:tint="#FFFFFF"/>
+
+                </FrameLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- BARRA INFERIOR (HOME) -->
+    <FrameLayout
+        android:id="@+id/barraNavegacao"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#D9D9D9"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageView
+            android:id="@+id/btnHome"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="24dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:src="@drawable/home"
+            app:tint="#000000" />
+    </FrameLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

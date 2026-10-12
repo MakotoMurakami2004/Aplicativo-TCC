@@ -1,0 +1,396 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SenhaEmail">
+
+    <!-- TÍTULO DA TELA -->
+    <TextView
+        android:id="@+id/txtTituloSenha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="32dp"
+        android:text="Senhas e E-mails"
+        android:textColor="#35DE0B"
+        android:textSize="36sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- CONTEÚDO ROLÁVEL -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="16dp"
+        android:fillViewport="true"
+        app:layout_constraintBottom_toTopOf="@id/barraNavegacao"
+        app:layout_constraintTop_toBottomOf="@id/txtTituloSenha">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- CARD INFORMATIVO -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                app:cardBackgroundColor="#F5F5F5"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="4dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <!-- TÍTULO -->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Cuidados com as Senhas"
+                        android:textColor="#000000"
+                        android:textSize="22sp"
+                        android:textStyle="bold" />
+
+                    <!-- TEXTO -->
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:text="As senhas são uma das principais formas de proteção das contas digitais. Uma senha fraca ou reutilizada em diferentes serviços pode facilitar o acesso indevido às informações pessoais do usuário."
+                        android:textColor="#444444"
+                        android:textSize="16sp"
+                        android:justificationMode="inter_word" />
+
+                    <!-- COMO CRIAR UMA SENHA SEGURA -->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="14dp"
+                        android:text="Como criar uma senha segura?"
+                        android:textColor="#4CAF50"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="6dp"
+                        android:text="• Utilize senhas longas e difíceis de adivinhar.\n\n• Combine letras maiúsculas e minúsculas, números e caracteres especiais.\n\n• Evite informações pessoais, como nome, data de nascimento ou telefone.\n\n• Não utilize a mesma senha em diferentes contas.\n\n• Sempre que possível, utilize a autenticação em dois fatores."
+                        android:textColor="#444444"
+                        android:textSize="16sp" />
+
+                    <!-- E-MAIL -->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:text="Cuidados com E-mails"
+                        android:textColor="#000000"
+                        android:textSize="22sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:text="E-mails podem ser utilizados por criminosos para aplicar golpes, distribuir links maliciosos ou tentar obter informações pessoais. Por isso, é importante verificar cuidadosamente o remetente e o conteúdo das mensagens recebidas."
+                        android:textColor="#444444"
+                        android:textSize="16sp"
+                        android:justificationMode="inter_word" />
+
+                    <!-- COMO IDENTIFICAR E-MAILS SUSPEITOS -->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="14dp"
+                        android:text="Como identificar um e-mail suspeito?"
+                        android:textColor="#000000"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="6dp"
+                        android:text="• Verifique cuidadosamente o endereço do remetente.\n\n• Desconfie de mensagens que exigem uma ação imediata.\n\n• Evite clicar em links desconhecidos.\n\n• Não abra anexos inesperados.\n\n• Confirme a informação diretamente no site oficial da empresa."
+                        android:textColor="#444444"
+                        android:textSize="16sp" />
+
+                    <!-- ALERTA -->
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:text="Nunca compartilhe sua senha por e-mail, mensagem ou telefone. Empresas legítimas não devem solicitar sua senha dessa forma."
+                        android:textColor="#C50003"
+                        android:textSize="18sp"
+                        android:textStyle="italic" />
+
+                    <!-- FUTUROS VÍDEOS -->
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:text="Abaixo serão apresentados vídeos educativos sobre segurança de senhas e e-mails."
+                        android:textColor="#0A7A0A"
+                        android:textSize="18sp"
+                        android:textStyle="italic" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <!-- ===================== -->
+            <!-- Senha -->
+            <!-- ===================== -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Cuidado com as Senhas: "
+                android:textColor="#4CAF50"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+            <!-- ===================== -->
+            <!-- VÍDEO 1 -->
+            <!-- ===================== -->
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/senha1"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginBottom="20dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                app:cardCornerRadius="12dp">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/senha"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/senha1" />
+
+                    <ImageView
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_gravity="center"
+                        android:src="@android:drawable/ic_media_play"
+                        app:tint="#FFFFFF"/>
+
+                </FrameLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <!-- ===================== -->
+            <!-- Email -->
+            <!-- ===================== -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Cuidado com E-mails: "
+                android:textColor="#4CAF50"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+            <!-- ===================== -->
+            <!-- VÍDEO 3 -->
+            <!-- ===================== -->
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/email"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginBottom="20dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                app:cardCornerRadius="12dp">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/emial"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/email1" />
+
+                    <ImageView
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_gravity="center"
+                        android:src="@android:drawable/ic_media_play"
+                        app:tint="#FFFFFF"/>
+
+                </FrameLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <!-- ===================== -->
+            <!-- VÍDEO 4 -->
+            <!-- ===================== -->
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/email2"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginBottom="20dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                app:cardCornerRadius="12dp">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/emial2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/email2" />
+
+                    <ImageView
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_gravity="center"
+                        android:src="@android:drawable/ic_media_play"
+                        app:tint="#FFFFFF"/>
+
+                </FrameLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+            <!-- ===================== -->
+            <!-- Cuidados -->
+            <!-- ===================== -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Cuidados com E-mail e Senha: "
+                android:textColor="#4CAF50"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+            <!-- ===================== -->
+            <!-- VÍDEO 5 -->
+            <!-- ===================== -->
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/emailesenha"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginBottom="20dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                app:cardCornerRadius="12dp">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/emailesenha1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/emailesenha1" />
+
+                    <ImageView
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_gravity="center"
+                        android:src="@android:drawable/ic_media_play"
+                        app:tint="#FFFFFF"/>
+
+                </FrameLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <!-- ===================== -->
+            <!-- VÍDEO 6 -->
+            <!-- ===================== -->
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/emailesenha2"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginBottom="20dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                app:cardCornerRadius="12dp">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/emailesenha3"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/emailsenha2" />
+
+                    <ImageView
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_gravity="center"
+                        android:src="@android:drawable/ic_media_play"
+                        app:tint="#FFFFFF"/>
+
+                </FrameLayout>
+
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+
+    </ScrollView>
+
+    <!-- BARRA INFERIOR -->
+    <FrameLayout
+        android:id="@+id/barraNavegacao"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#D9D9D9"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageView
+            android:id="@+id/btnHome"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="24dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:src="@drawable/home"
+            app:tint="#000000" />
+
+    </FrameLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
